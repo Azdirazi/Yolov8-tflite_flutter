@@ -1,0 +1,34 @@
+name: yolo_flutter
+description: A flutter project that uses tflite_flutter and NMS to show YOLOv8 output
+version: 0.3.0+3
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+  flutter: '>=3.22.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  tflite_flutter: ^0.10.4
+  image: ^4.2.0
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/cap_float16.tflite
+    - assets/models/glasses-sunglasses_float16.tflite
+    - assets/models/hat_float16.tflite
+    - assets/models/headband_float16.tflite
+    - assets/models/jewelry_float16.tflite
+    - assets/models/scarf_float16.tflite
+    - assets/models/watch_float16.tflite
